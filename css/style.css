@@ -212,6 +212,7 @@ main div figure {
     }
 }
 
+/* tablet view */
 @media screen and (min-width: 768px) {
     main {
         grid-template-columns: 1fr 1fr;
@@ -233,4 +234,9 @@ main div figure {
         display: list-item;
         grid-column: span 1;
     }
+}
+
+/* Desktop view */
+@media screen and (min-width: 1024px) {
+    
 }
