@@ -27,7 +27,8 @@ const toggleButton = document.querySelector(".toggle-button");
 const nav_links = document.querySelectorAll("nav ul li");
 
 function toggle_nav () {
-    for (let i = 0; i < nav_links.length; i++){
+    let l = nav_links.length;
+    for (let i = 0; i < l; i++){
         nav_links[i].classList.toggle("show-nav");
     }
 }
