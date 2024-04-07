@@ -238,5 +238,35 @@ main div figure {
 
 /* Desktop view */
 @media screen and (min-width: 1024px) {
-    
+    body {
+        margin: 20px 100px;
+        display: grid;
+        grid-template-columns: 1fr 4fr;
+        grid-gap: 10px;
+    }
+
+    header {
+        grid-column: 1 / span 1;
+        margin: 0;
+    }
+
+    nav ul {
+        grid-template-columns: 1fr;
+    }
+
+    main{
+        grid-template-columns: 1fr;
+    }
+
+    main > div > img {
+        display: block;
+        height: 300px;
+        width: auto;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(4, 1fr);
+    }
 }
